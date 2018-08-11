@@ -1,13 +1,11 @@
-public class Piano {
+public class Piano extends Instrument{
 
     private int key;
-    private String type;
-    private String sound;
 
-    public Piano(int key, String type, String sound) {
+    public Piano( String type, String sound, int key) {
+        super(sound);
+        super(type);
         this.key = key;
-        this.type = type;
-        this.sound = sound;
     }
 
     public int getKey(){
