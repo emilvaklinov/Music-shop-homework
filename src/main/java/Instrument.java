@@ -1,4 +1,4 @@
-public abstract class Instrument {
+public abstract class Instrument implements IPlay{
 
     String type;
     String sound;
