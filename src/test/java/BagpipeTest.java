@@ -9,7 +9,7 @@ public class BagpipeTest {
 
         @Before
            public void before(){
-            bagpipe = new Bagpipe("Scotish",2,"Bzjzjzj");
+            bagpipe = new Bagpipe("Scotish","Bzjzjzj",2);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class BagpipeTest {
     }
 
     @Test
-    public void canPlay(){
-            assertEquals("Bzjzjzj", bagpipe.canPlay());
+    public void play(){
+            assertEquals("Bzjzjzj", bagpipe.play());
     }
 }

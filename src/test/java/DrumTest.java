@@ -8,7 +8,7 @@ Drum drum;
 
     @Before
     public void before(){
-    drum = new Drum("Timpani",2,"Dum");
+    drum = new Drum("Timpani", "Dum", 2);
         }
 
     @Test
@@ -22,7 +22,7 @@ Drum drum;
     }
 
     @Test
-    public void canPlay(){
-        assertEquals("Dum", drum.canPlay());
+    public void play(){
+        assertEquals("Dum", drum.play());
     }
 }

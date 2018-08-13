@@ -1,13 +1,11 @@
-public class Drum {
-    private String type;
+public class Drum extends Instrument{
+
     private int batons;
-    private String sound;
 
-    public Drum(String type, int batons, String sound){
-        this.type = type;
+
+    public Drum(String type, String sound, int batons) {
+        super(type, sound);
         this.batons = batons;
-        this.sound = sound;
-
     }
 
     public String getType(){
@@ -18,7 +16,19 @@ public class Drum {
         return batons;
     }
 
-    public String canPlay(){
-        return sound;
+
+    @Override
+    public String play() {
+        return null;
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return 0;
+    }
+
+    @Override
+    public InstrumentType getCategory() {
+        return null;
     }
 }

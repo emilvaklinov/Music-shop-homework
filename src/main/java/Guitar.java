@@ -3,8 +3,7 @@ public class Guitar extends Instrument{
     private int strings;
 
     public Guitar(int strings, String type, String sound) {
-        super(type);
-        super(sound);
+        super(type,sound);
         this.strings = strings;
     }
 
@@ -23,7 +22,13 @@ public class Guitar extends Instrument{
     }
 
 
+    @Override
+    public double calculateMarkup() {
+        return 0;
+    }
 
-
-
+    @Override
+    public InstrumentType getCategory() {
+        return null;
+    }
 }

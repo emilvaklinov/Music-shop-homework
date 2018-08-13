@@ -1,13 +1,11 @@
-public class Bagpipe {
-    private String type;
+public class Bagpipe extends Instrument {
     private int chanter;
-    private String sound;
 
-    public  Bagpipe(String type, int chanter, String sound) {
-        this.type = type;
+    public Bagpipe(String type, String sound, int chanter) {
+        super(type, sound);
         this.chanter = chanter;
-        this.sound = sound;
     }
+
     public String getType(){
         return type;
 }
@@ -16,7 +14,17 @@ public class Bagpipe {
         return chanter;
     }
 
-    public String canPlay(){
+    public String play(){
         return sound;
+    }
+
+    @Override
+    public double calculateMarkup() {
+        return 0;
+    }
+
+    @Override
+    public InstrumentType getCategory() {
+        return null;
     }
 }

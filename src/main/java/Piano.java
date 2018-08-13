@@ -3,8 +3,7 @@ public class Piano extends Instrument{
     private int key;
 
     public Piano( String type, String sound, int key) {
-        super(sound);
-        super(type);
+        super(sound, type);
         this.key = key;
     }
 
@@ -16,8 +15,19 @@ public class Piano extends Instrument{
         return type;
     }
 
-    public String canPlay(){
-        return sound;
+
+    @Override
+    public String play() {
+        return null;
     }
 
+    @Override
+    public double calculateMarkup() {
+        return 0;
     }
+
+    @Override
+    public InstrumentType getCategory() {
+        return null;
+    }
+}
