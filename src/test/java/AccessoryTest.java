@@ -13,9 +13,9 @@ private Piano1 piano1;
 @Before
     public void before(){
     bagpipe1 = new Bagpipe1(InstrumentType.LEATHER,5);
-    drum1 = new Drum();
-    guitar1 = new Guitar();
-    piano1 = new Piano();
+    drum1 = new Drum1();
+    guitar1 = new Guitar1();
+    piano1 = new Piano1();
 
 }
 }
